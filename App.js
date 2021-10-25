@@ -1,21 +1,7 @@
-import React from 'react';
-import { StyleSheet, Text, View, Platform, StatusBar, SafeAreaView } from 'react-native';
+import React from "react";
 
-const statusBarHeight = StatusBar.currentHeight; 
+import { RestaurantsScreen } from "./src/features/restaurants/screens/restaurants.screen";
 
 export default function App() {
-  return (
-      <SafeAreaView style={{flex:1, marginTop: statusBarHeight }}>
-        <View style={{ backgroundColor: 'green', padding: 16 }}>
-          <Text>Search</Text>
-        </View>
-        <View style={{ flex: 1, backgroundColor: 'blue', padding: 16 }}>
-          <Text>list</Text>
-        </View>
-      </SafeAreaView>
-  );
+  return <RestaurantsScreen />;
 }
-
-const styles = StyleSheet.create({
-
-});
